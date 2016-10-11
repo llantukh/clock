@@ -9,24 +9,27 @@ var clock = function (){
   if (hour >= 10) {
     showHour.innerHTML = hour + ":"
   } else {
-    showHour.innerHTML = 0 + hour +":"
+    showHour.innerHTML = "0" + hour +":"
   }
 
   var showMinute = document.getElementById("minutes");
   if (minute >= 10) {
     showMinute.innerHTML = minute + ":"
   } else {
-    showMinute.innerHTML = 0 + minute +":"
+    showMinute.innerHTML = "0" + minute +":"
   }
 
   var showSecond = document.getElementById("seconds");
   if (second >= 10) {
     showSecond.innerHTML = second
   } else {
-    showSecond.innerHTML = 0 + second
+    showSecond.innerHTML = "0" + second
   }
 };
 
 clock();
 
 setInterval (clock, 1000);
+
+// container.style.background-color = ("#" + hour+minute+second);
+// };
