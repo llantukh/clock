@@ -1,0 +1,41 @@
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+body {
+  height: 500px;
+  width: 600px;
+}
+
+.container {
+  background: grey;
+  height: 300px;
+  width: 500px;
+}
+
+.clock {
+  height: 300px;
+  width: 500px;
+  font-size: 50px;
+  padding-left: 160px;
+  padding-top: 100px;
+}
+
+#hours {
+  color: white;
+  height: 50px;
+  width: 50px;
+}
+
+#minutes {
+  color: white;
+  height: 50px;
+  width: 50px;
+}
+
+#seconds {
+  color: white;
+  height: 50px;
+  width: 50px;
+}
