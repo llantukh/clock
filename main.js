@@ -41,3 +41,6 @@ var second = time.getSeconds();
   showHex.innerHTML = "<p>#" + hour + minute + second + "</p>"
 };
 setInterval (color, 1000);
+
+// hexy.style="background-color:#f5b405"
+// hexy.animate({ backgroundColor: '#f5b405' }, 'fast');
