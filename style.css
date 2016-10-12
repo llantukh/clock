@@ -39,3 +39,11 @@ body {
   height: 50px;
   width: 50px;
 }
+
+.hexy {
+  height: 180px;
+  width: 340px;
+  font-size: 50px;
+  padding-left: 160px;
+  padding-top: 100px;
+}
