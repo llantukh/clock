@@ -9,7 +9,7 @@ var clock = function (){
   if (hour >= 10) {
     showHour.innerHTML = hour + ":"
   } else {
-    showHour.innerHTML = "0" + hour +":"
+    showHour.innerHTML = "0" + hour + ":"
   }
 
   var showMinute = document.getElementById("minutes");
@@ -27,9 +27,17 @@ var clock = function (){
   }
 };
 
-clock();
-
 setInterval (clock, 1000);
 
-// container.style.background-color = ("#" + hour+minute+second);
-// };
+
+var color = function (){
+var time = new Date ();
+
+var hour = time.getHours();
+var minute = time.getMinutes();
+var second = time.getSeconds();
+
+  var showHex = document.getElementById("hexColor");
+  showHex.innerHTML = "<p>#" + hour + minute + second + "</p>"
+};
+setInterval (color, 1000);
