@@ -1,3 +1,4 @@
+//getting the clock to work
 var clock = function (){
   var time = new Date ();
 
@@ -29,7 +30,7 @@ var clock = function (){
 
 setInterval (clock, 1000);
 
-
+//getting the hex digits to change
 var color = function (){
 var time = new Date ();
 
@@ -37,10 +38,25 @@ var hour = time.getHours();
 var minute = time.getMinutes();
 var second = time.getSeconds();
 
-  var showHex = document.getElementById("hexColor");
-  showHex.innerHTML = "<p>#" + hour + minute + second + "</p>"
+  // var showHex = document.getElementById("hexColor");
+  // showHex.innerHTML = "<p>#" + hour + minute + second + "</p>"
 };
 setInterval (color, 1000);
 
-// hexy.style="background-color:#f5b405"
-// hexy.animate({ backgroundColor: '#f5b405' }, 'fast');
+
+// getting the background color to change
+var hexyNumber = 123456;
+
+var hexyChange = function (){
+  hexyNumber = hexyNumber + 10;
+}
+
+var hexyBackground = function (){
+  var hexyColor = document.getElementById("hexy");
+  hexyColor.innerHTML = "<div style = \"background-color:" + hexyNumber + ";\"> <p style=\"color:" + (1000000-hexyNumber) + ";\"> #" + hexyNumber + "</p></div>";
+  hexyColor.style.backgroundColor = ("#" + hexyNumber);
+};
+
+setInterval (clock, 1000);
+setInterval (hexyBackground, 500);
+setInterval (hexyChange, 500);
